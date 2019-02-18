@@ -1,6 +1,6 @@
 import {getItem} from "../mock/api-item"
 
-class Api {
+class ApiBase {
   constructor(base) {
     this.base = base
   }
@@ -16,4 +16,4 @@ class Api {
   }
 }
 
-module.exports = Api
+export default ApiBase
