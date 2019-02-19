@@ -31,7 +31,7 @@ var startApp = function(rootElement) {
           '[data-id="contentContainerLink"]'
         )
 
-        contentContainerTitle.textContent = item.label
+        contentContainerTitle.textContent = item.labelId
         contentContainerDescription.textContent = item.getDescription()
         contentContainerLink.href = item.link
       })
