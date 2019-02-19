@@ -8,7 +8,12 @@ var Item = function(id, label, description, link) {
 module.exports = Item
 
 Item.prototype.getDescription = function() {
-  return "<p>" + this.description + "</p>"
+  var description = this.description;
+  if (description.length > 30) {
+    description = description.substr(0, 30);
+  }
+  var output = "<p>" + this.description + "</p>"
+  return output
 }
 
 Object.defineProperties(Item.prototype, {
