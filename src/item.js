@@ -12,7 +12,7 @@ Item.prototype.getDescription = function() {
   if (description.length > 30) {
     description = description.substr(0, 30);
   }
-  var output = "<p>" + description + "</p>"
+  var output = "<i>" + description + "</i>"
   return output
 }
 
