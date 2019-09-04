@@ -32,7 +32,7 @@ var startApp = function(rootElement) {
         )
 
         contentContainerTitle.textContent = item.labelId
-        contentContainerDescription.textContent = item.getDescription()
+        contentContainerDescription.textContent = item.getSummary()
         contentContainerLink.href = item.link
       })
     })
