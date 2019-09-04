@@ -7,7 +7,7 @@ var Item = function(id, label, description, link) {
 
 module.exports = Item
 
-Item.prototype.getDescription = function() {
+Item.prototype.getSummary = function() {
   var description = this.description;
   if (description.length > 30) {
     description = description.substr(0, 30);
