@@ -20,7 +20,7 @@ Object.defineProperties(Item.prototype, {
   labelId: {
     enumerable: false,
     get: () => {
-      return this.id + " " + this.label.toUpperCase()
+      return "[" + this.id + "] " + this.label.toUpperCase()
     }
   },
   id: {
