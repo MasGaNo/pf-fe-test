@@ -1,18 +1,16 @@
-import {getItem} from "../mock/api-item"
+import '../polyfill/fetch.js';
 
 class ApiBase {
   constructor(base) {
     this.base = base
   }
-
+  
   request(endpoint, onSuccess, onFail) {
     console.log("Making Request to:", this.base + endpoint)
 
-    setTimeout(function() {
-      var item = getItem(endpoint)
-
-      onSuccess(item)
-    }, 1000)
+    fetch(endpoint)
+      .then(response => response.json())
+      .then(onSuccess, onFail);
   }
 }
 
