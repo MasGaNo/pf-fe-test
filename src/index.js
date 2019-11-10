@@ -24,15 +24,15 @@ var startApp = function(rootElement) {
         var contentContainerTitle = contentContainer.querySelector(
           '[data-id="contentContainerTitle"]'
         )
-        var contentContainerDescription = contentContainer.querySelector(
-          '[data-id="contentContainerDescription"]'
+        var contentContainerSummary = contentContainer.querySelector(
+          '[data-id="contentContainerSummary"]'
         )
         var contentContainerLink = contentContainer.querySelector(
           '[data-id="contentContainerLink"]'
         )
 
         contentContainerTitle.textContent = item.labelId
-        contentContainerDescription.textContent = item.getSummary()
+        contentContainerSummary.textContent = item.getSummary()
         contentContainerLink.href = item.link
       })
     })
